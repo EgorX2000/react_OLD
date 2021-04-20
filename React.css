@@ -1,0 +1,198 @@
+div{
+    display: block;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+.header{
+	background-color: #20232a;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.react{
+	font-size: 16px;
+    margin-top: 1px;
+	color: inherit;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+.header_info{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headerinfo{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+}
+.homepage{
+	width: 100px;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-right: 10px;
+    height: 100%;
+    align-items: center;
+    color: #61dafb;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+}
+.links{
+	flex: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-flex: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+}
+.header_button{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+    transition: color 0.2s ease-out;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+}
+.footer{
+	background-color: #20232a;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.footer_info{
+	padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footerinfo{
+	display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+}
+.ramka{
+	margin: 0;
+	padding: 10;
+	list-style-type: none;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	width: 57%;
+	text-align: left;
+	background-color: #20232a;
+	color: #dadde9;
+}
+.zagolovki{
+	text-decoration: underline;
+	font-size: 22px;
+	font-weight: bold;
+}
+.spisok{
+	font-size: 20px;
+	font-weight: bold;
+}
+#scroll_button_container{
+	position: fixed;
+	right: 11px;
+	bottom: 11px;
+	margin: 0;
+	padding: 6;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	background-color: #20232a;
+}
+#code {
+	margin: 0;
+	padding: 6;
+	list-style-type: none;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	width: 400px;
+	text-align: center;
+	background-color: #20232a;
+}
+#code a {
+	color: #dadde9;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	display: relative;
+}
+#code a:hover {
+	border-radius: 10px;
+	background-color: #dadde9;
+	color: #20232a;
+}
+#like_button_container{
+	position: relative;
+	bottom: 11px;
+	left: 40px;
+	font-weight: bold;
+}
+#codegoback {
+	margin: 0;
+	padding: 6;
+	list-style-type: none;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	width: 130px;
+	text-align: center;
+	background-color: #20232a;
+	position: absolute;
+	left: 46px;
+}
+#codegoback a {
+	color: #dadde9;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	display: relative;
+}
+#codegoback a:hover {
+	border-radius: 10px;
+	background-color: #dadde9;
+	color: #20232a;
+}

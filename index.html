@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <link href="React.css" type="text/css" rel="stylesheet">
+		<title>
+		    React
+		</title>
+		<style>
+		body { background: url(data:image/jpeg;base64,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); }
+		</style>
+    </head>
+    <body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header_info">
+					<div class="headerinfo">
+						<a class="homepage" href="index.html">
+							<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" height="20">
+							<span class="react">React</span>
+						</a>
+						<nav class="links">
+							<a class="header_button" href="#1">Что такое React?</a>
+							<a class="header_button" href="#2">Зачем использовать React?</a>
+							<a class="header_button" href="#3">Как добавить React на свой HTML сайт</a>
+							<a class="header_button" href="#4">Пример</a>
+							<a class="header_button" href="#5">Создаем свое приложение на React</a>
+							<a class="header_button" href="#6">Bootstrap и Bootswatch</a>
+						</nav>
+					</div>
+				</div>
+			</header>
+        	<p><a name="1"></a></p>
+				<p class="zagolovki">Что такое React и зачем его использовать</p>
+				<p>React – самая популярная библиотека JavaScript для разработки пользовательского интерфейса (UI). React предлагает отличный ответ на входные данные пользователя, используя новый метод рендеринга веб-сайтов.</p>
+				<p>Компоненты этого инструмента были разработаны Facebook. Он был запущен как инструмент JavaScript с открытым исходным кодом в 2013 году. В настоящее время React опережает своих основных конкурентов, таких как Angular и Bootstrap, две наиболее продаваемые библиотеки JavaScript своего времени.</p>
+			<p><a name="2"></a></p>
+				<p class="zagolovki">Зачем использовать React?</p>
+				<p>React используется сотнями крупных компаний по всему миру, включая Netflix, Airbnb, American Express, Facebook, WhatsApp, eBay и Instagram. Это доказательство того, что у инструмента есть ряд преимуществ, с которыми невозможно конкурировать.</p>
+				<p>Вот некоторые из причин, чтобы использовать его:</p>
+				<ol>
+					<li class="spisok">Простота в Использовании</li>
+					<p>React – это JavaScript библиотека GUI с открытым исходным кодом, сосредоточенная на одной конкретной цели – эффективном выполнение задач в рамках разработки пользовательского интерфейса. Его можно отнести к категории “V” в архитектурном шаблоне MVC.</p>
+					<li class="spisok">Поддерживает Java-компонент Многократного Использования</li>
+					<p>React позволяет повторно использовать компоненты, которые были разработаны в других приложениях, использующих ту же функцию. Возможность повторного использования компонента является явным преимуществом для разработчиков.</p>
+					<li class="spisok">Простое Написание Компонентов</li>
+					<p>Компонент React создать проще, поскольку он использует JSX, опциональное расширение синтаксиса JavaScript, которое позволяет комбинировать HTML с JavaScript.</p>
+					<p>JSX – это отличная смесь JavaScript и HTML. Оно делает весь процесс написания структуры сайта более понятным. Кроме того, расширение также значительно упрощает рендеринг нескольких функций.</p>
+				</ol>
+			<p><a name="3"></a></p>
+				<p class="zagolovki">Как добавить React на свой HTML сайт</p>
+				<ol>
+					<li class="spisok">Добавляем DOM-контейнер в HTML</li>
+					<p>Для начала, откройте HTML файл страницы, которую хотите отредактировать. Добавьте пустой тег <div> в месте, где вы хотите отобразить что-нибудь с помощью React. Например:</p>
+					<div class="ramka">
+						<pre>
+	&lt;!-- ... остальной HTML ... -->
+	
+	&lt;div id="like_button_container"></div>
+	
+	&lt;!-- ... остальной HTML ... -->
+						</pre>
+					</div>
+					<p>Затем назначьте созданному <div> уникальный атрибут id. Это позволит впоследствии найти тег из JavaScript кода и отобразить React-компоненты внутри него.</p>
+					<li class="spisok">Добавляем script-теги</li>
+					<p>Теперь добавьте три &lt;script>-тега перед закрывающим тегом &lt;/body>:</p>
+					<div class="ramka">
+						<pre>
+		&lt;!-- ... остальной HTML ... -->
+	
+		&lt;!-- Загрузим React. -->
+		&lt;script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		&lt;script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	
+		&lt;!-- Загрузим наш React-компонент. -->
+		&lt;script src="like_button.js">&lt;/script>
+	
+	&lt;/body>						
+						</pre>
+					</div>
+					<p>Первые два тега загружают React. Третий тег загружает код вашего собственного компонента.</p>
+					<li class="spisok">Создаём React-компонент</li>
+					<p>Создайте файл с именем loke_button.js рядом с вашим HTML файлом.</p>
+					<p>Возьмите этот стартовый код и вставьте его в созданный ранее файл:</p>
+					<div class="ramka">
+						<pre>
+	'use strict';
+	
+	const e = React.createElement;
+	
+	class LikeButton extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = { liked: false };
+	}
+	
+	render() {
+		if (this.state.liked) {
+		return 'You liked the page.';
+		}
+	
+		return e(
+		'button',
+		{ onClick: () => this.setState({ liked: true }) },
+		'Like'
+		);
+	}
+	}
+						</pre>
+					</div>
+					<p>Добавьте ещё 2 строки в конец файла like_button.js, после стартового кода:</p>
+					<div class="ramka">
+						<pre>
+	// ... стартовый код ...
+	
+	const domContainer = document.querySelector('#like_button_container');
+	ReactDOM.render(e(LikeButton), domContainer);						
+						</pre>
+					</div>
+					<p>Этот код ищет контейнер &lt;div>, который мы добавили на первом шаге, а затем отображает наш React-компонент с кнопкой «Нравится» внутри него.</p>
+					<p>Готово!</p>
+					<p>Вот и всё! Вы только что добавили свой первый React-компонент на страницу.</p>
+					<p><a name="4"></a></p>
+					<p id="code"><a href="https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/f6c882b6ae18bde42dcf6fdb751aae93495a2275.zip">Скачать код примера (архив 2 Кбайт)</a></p>
+					<br>
+					<p id="code"><a href="React_LikeButton.html">Просмотреть код примера</a></p>
+				</ol>
+			<div id="scroll_button_container"></div>
+			<footer class="footer">
+				<div class="footer_info">
+					<div class="footerinfo">
+						
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<script src="scroll_button.js"></script>
+    </body>
+</html>

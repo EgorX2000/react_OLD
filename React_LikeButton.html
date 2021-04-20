@@ -1,0 +1,71 @@
+<html>
+    <head>
+		<link href="React.css" type="text/css" rel="stylesheet">
+		<title>
+		    React_LikeButton
+		</title>
+		<style>
+		body { background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExIVFhUXGB0VGRcVFxUXFRcXFxUXHR0VFxcYHSggGB0lHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAJkBSgMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAAIDB//EACIQAAMAAgMBAQADAQEAAAAAAAABAhEhAxIxUUETMmGBcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD2C3kU8oqrBPYCkkYz+4GJF2A4TDxBa/RlYAzLNOUymzNSBq3+FDJ6RKsgSlBbyCnZqqwBJ5QpJA9hEgGf3BvCYOwtfoD4jMs1KwU2BOUyt/hmpNPSAoZKUSrJlTsBt5FPKKqwT2ApJGM/uBiRdgOEw8QWv0ZWAMyzTlMpszUgat/hQyekSrIEpQW8gp2aqsASeUKSQPYRIBn9wbwmDsLX6A+IzLNSsFNgTlM1/wBOdSb6oDNQKWEDbQpZ9AoeTP8AGa6h2YDbwixlF1+l1+AEwNVsFTZrqAXOSicE9AssCVbKoFwgbaAUsIoeSSz6XUDP8Zq3hB2Y9foFjKCYHr8BU2A1Wyucj1B6AonAKtkssXCAKgUsIG2hSz6BQ8mf4zXUOzAbeEWMouv0uvwAmBqtgqbNdQC5yUTgnoFlgSrZVAuEDbQClhFDySWfS6gZ/jNW8IOzHr9AsZQTA9fgKmwGq2ayHUz0QDZcngNNinj0DHH6bfo9jPVgHKPEPb6Tr4BT+nO/WbUse6Al5sZ8Ct+FKaA5o6WXdA02A8nhjj9Np49HsAP0zyj1Y9voBxDP6Tr4ClgYv1nRebLuirfgDPhyR0lNF3QFZcngNNinj0DHH6bfo9jPVgHKPEPb6Tr4BT+nO/WbUse6Al5sZ8Ct+FKaA5o6WXdA02A8nhjj9Np49HsAP0zyj1Y9voBxDP6Tr4ClgYv1m1ke6Huv9Azd/Bl5ROci9AEIz/IMMXAFS0XiDkYy8gZmzVSUwZp7A1dYKKyOEySwAKdhV/AVbNOcgUvKKEL0ZhgH8hqlonAcjAfEZmzUvJTAFUldYM09m8JgEVklOxSwYVbAav4MvKJzkXoAhGf5Bhi4AqWi8QcjGXkDM2aqSmDNPYGrrBRWRwmSWABTsKv4CrZpzkCl5RQhejMMA/kNUtE4DkYD4jM2al5KYAqk1g509mu6AKXwUsFbKllaAk0zON4GJ2OdgOkGmFyMLAGZWTTpFLM1LyBqkEL9HxFPgF2QUvhlQzdsCSwSaZUsrQROwDG8G9IM7C5AdMzKyahYKWBOkVIzUvJrxAEL9HsinwwoYGqXwUsFbKllaAk0zON4GJ2OdgOkGmFyMLAGZWTTpFLM1LyBqkEL9HxFPgF2QUvhlQzdsCSwSaZUsrQROwDG8G9IM7C5AdMzKyahYKWBOkJipeRUf6AuPpeGbZqPABXkehQc2wOlVglsq8JvQEoB2Zl7N16gJrPpKceByMuMC7i4+kvTNsDXgK8jHhQBdCqsHNs6V4BLZKCb0Yl7A07FrPpV6g5GAqceB3LjFegTj6Xhm2ajwAV5HoUHNsDpVYJbKvCb0BKAdmZezdeoCaz6SnHgcjLjAu4uPpL0zbA14CvIx4UAXQqrBzbOleAS2Sgm9GJewNOzWX8CvUaAMoG/gWhbwgCcocopsHOwKt+Cq+lV4KXkCygeSiSfIA9vpZX4T2ihYAzv022jK5CtALfwJyhbwimwLKCt+E52NXgCVfSyil5CJAnke30HyC9oCyvwzv01CwC5ANNoG/gWhbwgCcocopsHOwKt+Cq+lV4KXkCygeSiSfIA9vpZX4T2ihYAzv022jK5CtALfwJyhbwimwLKCt+E52NXgCVfSyil5CJAnkez+A+Q0qQGeSjTWUGkTXwCmMB22U5Y68AqnJSsIK/wZX0AihqCWGZeQNVpFDLH0dfgGVxlyUCya0gFrKCYwTXwJywLtsanJa8Cv8AZWEEUMr6SwwKoKtIy8msfQKGC4zWvwwsgPJRprKDSJr4BTGA7bKcsdeAVTkpWEFf4Mr6ARQ1BLDMvIGq0ihlj6OvwDK4y5KBZNaQC1lBMYJr4E5YF22NTkteBX+AMrCCKGV9JYYFUD0/ww8muv+gZtM1HhO/pegUmHLNKcD3Aq8FrRlzkVoDErZuvwu4OALkRcaHOCVZ8Al6ZtMegu/oFHhSXoKcAZcs3Xhdwc5A01o5ytm1ou4FX4HIicDnABxoV6SrPgdAC0zUeE7+l6BSYcs0pwPcCrwWtGXORWgMStm6/C7g4AuRFxoc4JVnwCXpm0x6C7+gUeFJegpwBlyzdeF3BzkDTWjnK2bWi7gVfhow4LD+gNoreEHMPL/UDMVs01szxe/8AET/sA3Q8byHL6h4fAKUZqmXF+meT1gdFtFPhX4XH4BhWzdo5x+f+m+YBt4RmK2a5f6meL3/iA01sLoH/AGHl9QDxvJSi4fDPF+gVUzS2jnyes6X4BT4YVs3x+HOPz/0DpaK3hBzDy/1AzFbNNbM8Xv8AxE/7AN0PG8hy+oeHwClGaplxfpnk9YHRbRT4V+Fx+AYVs3aOcfn/AKb5gG3hGYrZrl/qZ4vf+IDTWwugf9h5fUA8byUouHwzxfoFVM0r/wAOfJ6zugP/2Q==); }
+		</style>
+    </head>
+    <body>
+        <div class="wrapper">    
+            <p class="zagolovki">Код примера:</p>
+            <ol>
+                <li class="spisok">HTML код:</li>
+                <div class="ramka">
+                    <pre>
+&lthtml>
+    &lthead>
+        &lttitle>
+            React_LikeButton
+        &lt/title>
+    &lt/head>
+    &ltbody>
+        &ltdiv id="like_button_container">&lt/div>
+        &ltscript src="https://unpkg.com/react@16/umd/react.development.js" crossorigin>&lt/script>
+        &ltscript src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin>&lt/script>
+        &ltscript src="like_button.js">&lt/script>
+    &lt/body>
+&lt/html>
+                    </pre>
+                </div>
+                <li class="spisok">JS код:</li>
+                <div class="ramka">
+                    <pre>
+'use strict';
+
+const e = React.createElement;
+
+class LikeButton extends React.Component {
+constructor(props) {
+	super(props);
+	this.state = { liked: false };
+}
+
+render() {
+	if (this.state.liked) {
+	return 'You liked the page!';
+	}
+
+	return e(
+	'button',
+	{ onClick: () => this.setState({ liked: true }) },
+	'Like'
+	);
+}
+}
+const domContainer = document.querySelector('#like_button_container');
+ReactDOM.render(e(LikeButton), domContainer);
+                    </pre>
+                </div>
+            </ol>
+            <!--Кнопка лайка(React компонент)-->
+            <div id="like_button_container"></div>
+            <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+            <script src="like_button.js"></script>
+            <p id="codegoback"><a href="index.html">На главную</a></p>
+        </div>
+    </body>
+</html>
